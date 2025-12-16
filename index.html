@@ -3,81 +3,223 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/output.css">
   <title>Frontend Mentor | Scoot</title>
 </head>
-<body>
+<body class="overflow-x-hidden">
 
-  About
-  Location
-  Careers
+  <header class="bg-white flex items-center justify-start px-8 md:justify-start md:py-5.5 md:px-42">
 
-  Get Scootin
+    <aside class="group relative h-16 flex items-center justify-center md:hidden">
 
+      <img class="mr-auto" src="./assets/icons/hamburger.svg" alt="burger">
 
+      <div class="hidden h-[603px] group-hover:flex flex-col absolute left-[-33px] top-16 w-64 pt-16 pl-8 z-10 bg-zinc-600 ">
 
-  Scooter sharing made simple
+        <ul class="flex flex-col gap-6">
+          <li><a class="text-slate-200 text-md font-bold font-['Space_Mono']" href="about.html">About</a></li>
+          <li><a class="text-slate-200 text-md font-bold font-['Space_Mono']" href="locations.html">Location</a></li>
+          <li><a class="text-slate-200 text-md font-bold font-['Space_Mono']" href="careers.html">Careers</a></li>
+        </ul>
 
-  Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient 
-  locations in each of our cities. Use our app to locate the nearest bike, unlock 
-  it with a tap, and you’re away!
+        <button class="mt-[339px] w-48 font-['Space_Mono'] text-white text-base font-bold bg-amber-400 px-10 py-3.5">Get Scootin</button>
 
-  Get Scootin
+      </div>
 
+    </aside>  
 
+    <img class="mx-auto w-[75.5px] h-5 md:mx-0 md:w-[108px] md:h-7" src="./assets/logo.svg" alt="logo">
 
-  Locate with app
+    <ul class="flex flex-row gap-6 hidden md:flex md:ml-14.5">
+      <li><a class="text-gray-400 text-base font-bold font-['Space_Mono']" href="about.html">About</a></li>
+      <li><a class="text-gray-400 text-base font-bold font-['Space_Mono']" href="locations.html">Location</a></li>
+      <li><a class="text-gray-400 text-base font-bold font-['Space_Mono']" href="careers.html">Careers</a></li>
+    </ul>
 
-  Use the app to find the nearest scooter to you. We are continuously placing scooters 
-  in the areas with most demand, so one should never be too far away. 
+    <button class="ml-auto w-48 font-['Space_Mono'] text-white text-base font-bold bg-amber-400 px-10 py-3.5 hidden md:flex">Get Scootin</button>
 
-  Pick your scooter
+  </header>
 
-  We show the most important info for the scooters closest to you. So you know how much 
-  charge they have left and can see roughly how much it will cost.
+  <main>
 
-  Enjoy the ride
+    <section id="top" class="relative pb-[179px] bg-[url(/assets/images/home-hero-mobile.jpg)] bg-cover bg-no-repeat flex flex-col items-center md:bg-[url(/assets/images/home-hero-desktop.jpg)] md:bg-cover md:bg-no-repeat md:bg-center md:items-start">
 
-  Scan the QR code and the bike will unlock. Retract the cable lock, put on a helmet, 
-  and you’re off! Always lock bikes away from walkways and accessibility ramps.
+      <h1 class="pt-[115px] w-[311px] font-['Space_Mono'] text-white text-4xl font-bold text-center md:pt-[153px] md:pl-[165px] md:text-6xl md:w-[753px] md:text-start">Scooter sharing made simple</h1>
 
+      <p class="mt-6 w-[321px] font-['Lexend_Deca'] text-white text-base font-normal text-center md:mt-10 md:ml-60 md:w-[445px] md:text-start">Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each of our cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re away!</p>
+      
+      <button class="mt-8.5 font-['Space_Mono'] text-white text-base font-bold bg-amber-400 px-10 py-3.5 md:ml-60 md:mt-10">Get Scootin</button>
 
+      <img class="hidden md:block md:absolute md:bottom-92" src="./assets/patterns/line.svg" alt="line">
 
-  Easy to use riding telemetry
+      <img class="absolute left-[-235px] bottom-[35px] md:bottom-58 md:left-[700px]" src="./assets/patterns/right-arrow.svg" alt="arrow">
 
-  The Scoot app is available with riding telemetry. This means it can show you your 
-  average speed, how long you've been using the scooter, your traveling distance, 
-  and many more things all in an easy to use app.
+      <img class="hidden md:block md:absolute md:bottom-60 md:right-[-45px]" src="./assets/patterns/white-circles.svg" alt="circles">
 
-  Learn More
+    </section>
 
-  Coming to a city near you
+    <section id="mid" class="mt-30 flex flex-col gap-12 md:px-[165px] md:flex-row md:justify-between md:relative">
 
-  Scoot is available in 4 major cities so far. We’re expanding rapidly, so be sure 
-  to let us know if you want to see us in your hometown. We’re aiming to let our 
-  scooters loose on 23 cities over the coming year.
+      <img class="hidden md:block md:absolute md:left-0 md:top-10 md:-z-10" src="./assets/patterns/line-grey-vertical.svg" alt="line">
 
-  Learn More
+      <div id="first" class="flex flex-col items-center gap-6 md:gap-10 md:items-start">
 
-  Zero hassle payments
+        <img class="w-14 h-14 md:w-24 md:h-24" src="./assets/icons/locate.svg" alt="Locate with app">
 
-  Our payment is as easy as one two three. We accept most credit cards and debit cards. 
-  You can also link your PayPal account inside the app. Need to pay later? No worries! 
-  You can defer payment for up to a month.
+        <div class="flex flex-col gap-6 md:gap-7">
 
-  Learn More
+          <h2 class="text-center text-slate-600 text-xl font-bold font-['Space_Mono'] md:text-2xl md:text-start">Locate with app</h2>
 
+          <p class="w-80 text-center text-gray-400 text-base font-normal font-['Lexend_Deca'] md:text-start">Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away. </p>
 
+        </div>
 
-  Sign up and Scoot off today
+      </div>
 
+      <div id="second" class="flex flex-col items-center gap-6 md:gap-10 md:items-start">
 
+        <img class="w-14 h-14 md:w-24 md:h-24" src="./assets/icons/scooter.svg" alt="Pick your scooter">
 
-  About
-  Location
-  Careers
+        <div class="flex flex-col gap-6 md:gap-7">
+
+          <h2 class="text-center text-slate-600 text-xl font-bold font-['Space_Mono'] md:text-2xl md:text-start">Pick your scooter</h2>
+
+          <p class="w-80 text-center text-gray-400 text-base font-normal font-['Lexend_Deca'] md:text-start">We show the most important info for the scooters closest to you. So you know how much charge they have left and can see roughly how much it will cost. </p>
+
+        </div>
+
+      </div>
+
+      <div id="third" class="flex flex-col items-center gap-6 md:gap-10 md:items-start">
+
+        <img class="w-14 h-14 md:w-24 md:h-24" src="./assets/icons/ride.svg" alt="Enjoy the ride">
+
+        <div class="flex flex-col gap-6 md:gap-7">
+
+          <h2 class="text-center text-slate-600 text-xl font-bold font-['Space_Mono'] md:text-2xl md:text-start">Enjoy the ride</h2>
+
+          <p class="w-82 text-center text-gray-400 text-base font-normal font-['Lexend_Deca'] md:text-start">Scan the QR code and the bike will unlock. Retract the cable lock, put on a helmet, and you’re off! Always lock bikes away from walkways and accessibility ramps. </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="bot" class="mt-21 flex flex-col gap-30 md:px-[165px]">
+
+      <div id="first">
+
+        <div id="photo" class="relative">
+
+          <img class="px-8 rounded-[50%]" src="./assets/images/telemetry.jpg" alt="telemetery">
+  
+          <img class="w-[734px] h-[100px] absolute bottom-[50px] right-[-100px]" src="./assets/patterns/left-downward-arrow.svg" alt="arrow">
+  
+        </div>
+  
+        <div id="text" class="mt-14 flex flex-col items-center gap-8">
+  
+          <h3 class="text-center text-slate-600 text-3xl font-bold font-['Space_Mono']">Easy to use <br> riding telemetry</h3>
+  
+          <p class="w-80 text-center text-gray-400 text-base font-normal font-['Lexend_Deca']">The Scoot app is available with riding telemetry. This means it can show you your average speed, how long you've been using the scooter, your traveling distance, and many more things all in an easy to use app.</p>
+  
+          <button class="font-['Space_Mono'] text-white text-base font-bold bg-amber-400 px-10 py-3.5">Learn More</button>
+  
+        </div>
+
+      </div>
+
+      <div id="second">
+
+        <div id="photo" class="relative">
+
+          <img class="px-8 rounded-[50%]" src="./assets/images/near-you.jpg" alt="near you">
+  
+          <img class="w-[734px] h-[100px] absolute bottom-[200px] left-[-150px]" src="./assets/patterns/right-arrow.svg" alt="arrow">
+  
+        </div>
+  
+        <div id="text" class="mt-14 flex flex-col items-center gap-8">
+  
+          <h3 class="text-center text-slate-600 text-3xl font-bold font-['Space_Mono']">Coming to a city <br> near you</h3>
+  
+          <p class="w-83 text-center text-gray-400 text-base font-normal font-['Lexend_Deca']">Scoot is available in 4 major cities so far. We’re expanding rapidly, so be sure to let us know if you want to see us in your hometown. We’re aiming to let our scooters loose on 23 cities over the coming year.</p>
+  
+          <button class="font-['Space_Mono'] text-white text-base font-bold bg-amber-400 px-10 py-3.5">Learn More</button>
+  
+        </div>
+        
+      </div>
+
+      <div id="third" class="mb-30">
+
+        <div id="photo" class="relative">
+
+          <img class="px-8 rounded-[50%]" src="./assets/images/payments.jpg" alt="near you">
+  
+          <img class="w-[734px] h-[100px] absolute bottom-[200px] right-[-150px]" src="./assets/patterns/left-downward-arrow.svg" alt="arrow">
+  
+        </div>
+  
+        <div id="text" class="mt-14 flex flex-col items-center gap-8">
+  
+          <h3 class="text-center text-slate-600 text-3xl font-bold font-['Space_Mono']">Zero hassle <br> payments</h3>
+  
+          <p class="w-80 text-center text-gray-400 text-base font-normal font-['Lexend_Deca']">Our payment is as easy as one two three. We accept most credit cards and debit cards. You can also link your PayPal account inside the app. Need to pay later? No worries! You can defer payment for up to a month.</p>
+  
+          <button class="font-['Space_Mono'] text-white text-base font-bold bg-amber-400 px-10 py-3.5">Learn More</button>
+  
+        </div>
+        
+      </div>
+
+      
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    <div class="bg-slate-600 relative flex flex-col items-center py-22 gap-10">
+
+      <img class="absolute bottom-0" src="./assets/patterns/semi-circles.svg" alt="bg">
+
+      <h4 class="text-center text-white text-3xl font-bold font-['Space_Mono']">Sign up and Scoot off today</h4>
+
+      <div id="platform" class="flex gap-3">
+
+        <img class="w-28.5 h-10" src="./assets/icons/app-store.svg" alt="app store">
+
+        <img class="w-32.5 h-10" src="./assets/icons/google-play.svg" alt="google play">
+
+      </div>
+
+    </div>
+
+    <div class="h-[438px] bg-zinc-700 flex flex-col items-center justify-center">
+
+      <img src="./assets/logo-white.svg" alt="logo">
+
+      <ul class="flex flex-col items-center gap-6 mt-10 mb-13.5 gap-4">
+        <li><a class="text-gray-400 text-base font-bold font-['Space_Mono']" href="about.html">About</a></li>
+        <li><a class="text-gray-400 text-base font-bold font-['Space_Mono']" href="locations.html">Location</a></li>
+        <li><a class="text-gray-400 text-base font-bold font-['Space_Mono']" href="careers.html">Careers</a></li>
+      </ul>
+
+      <div id="socials" class="flex gap-12">
+
+        <img src="./assets/icons/facebook.svg" alt="fb">
+        <img src="./assets/icons/twitter.svg" alt="tw">
+        <img src="./assets/icons/instagram.svg" alt="ig">
+
+      </div>
+
+    </div>
+
+  </footer>
 
 </body>
 </html>
