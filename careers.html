@@ -7,82 +7,253 @@
   <link rel="stylesheet" href="./src/output.css">
   <title>Frontend Mentor | Scoot</title>
 </head>
-<body>
+<body class="overflow-x-hidden">
 
-  About
-  Location
-  Careers
+  <header class="bg-white flex items-center justify-start px-8 md:justify-start md:py-5.5 md:px-42">
 
-  Get Scootin
+    <aside class="group relative h-16 flex items-center justify-center md:hidden">
 
+      <img class="mr-auto" src="./assets/icons/hamburger.svg" alt="burger">
 
+      <div class="hidden h-[603px] group-hover:flex flex-col absolute left-[-33px] top-16 w-64 pt-16 pl-8 z-10 bg-zinc-600 ">
 
-  Careers
+        <ul class="flex flex-col gap-6">
+          <li><a class="text-slate-200 text-md font-bold font-['Space_Mono'] hover:text-amber-400" href="about.html">About</a></li>
+          <li><a class="text-slate-200 text-md font-bold font-['Space_Mono'] hover:text-amber-400" href="locations.html">Location</a></li>
+          <li><a class="text-slate-200 text-md font-bold font-['Space_Mono'] hover:text-amber-400" href="index.html">Home</a></li>
+        </ul>
 
+        <button class="mt-[339px] w-50 border-[3px] border-amber-400 font-['Space_Mono'] text-white text-base font-bold bg-amber-400 px-10 py-3.5 hover:text-amber-400 hover:border-[3px] hover:border-amber-400">Get Scootin</button>
 
+      </div>
 
-  Care to join our mission?
+    </aside>  
 
-  We’re always looking for ambitious individuals to help us on our journey. If you’re 
-  passionate about our mission to provide clean, accessible transport to improve urban 
-  living we want to hear from you!
+    <img class="mx-auto w-[75.5px] h-5 md:mx-0 md:w-[108px] md:h-7" src="./assets/logo.svg" alt="logo">
 
-  Say Hello
+    <ul class="flex flex-row gap-6 hidden md:flex md:ml-14.5">
+      <li><a class="text-gray-400 text-base font-bold font-['Space_Mono'] hover:text-amber-400" href="about.html">About</a></li>
+      <li><a class="text-gray-400 text-base font-bold font-['Space_Mono'] hover:text-amber-400" href="locations.html">Location</a></li>
+      <li><a class="text-gray-400 text-base font-bold font-['Space_Mono'] hover:text-amber-400" href="index.html">Home</a></li>
+    </ul>
 
+    <button class="ml-auto w-50 border-[3px] border-amber-400 font-['Space_Mono'] text-white text-base font-bold bg-amber-400 px-10 py-3.5 hidden md:flex hover:text-amber-400 hover:border-[3px] hover:border-amber-400 hover:bg-white">Get Scootin</button>
 
+  </header>
 
-  Why join us?
+  <main>
 
-  01
-  Our tech
-  We’re using cutting edge technology to drive accessible urban transportation forward. 
-  Our fully electric scooters are a joy to ride!
+    <section id="top" class="h-40 bg-[url(/assets/images/careers-location-hero-mobile.jpg)] bg-cover bg-no-repeat flex justify-center items-center md:bg-[url(/assets/images/careers-locations-hero-desktop.jpg)] md:bg-cover md:bg-no-repeat md:bg-center md:items-center md:justify-start md:pl-[165px]">
 
-  02
-  Our integrity
-  We are fully committed to deliver a great yet safe, sustainable micro-mobility experience 
-  in every city we serve.
+      <h1 class="text-white text-4xl font-bold font-['Space_Mono']">Careers</h1>
 
-  03
-  Our community
-  We support every community we serve. All workers are paid a living wage based on their 
-  location and are Scoot employees.
+      <img class="hidden md:block md:absolute md:right-[-30px]" src="./assets/patterns/white-circles.svg" alt="circles">
 
+    </section>
+
+    <section id="top" class="md:px-[165px]">
+
+      <div class="mt-20 md:flex md:flex-row-reverse md:justify-between">
+
+        <div id="photo" class="relative">
   
-
-  General Manager
-  Jakarta, Indonesia
-  Apply
-
-  UI/UX Designer
-  Yokohama, Japan
-  Apply
-
-  Blog Content Copywriter
-  New York, United States
-  Apply
-
-  Graphic Designer
-  New York, United States
-  Apply
-
-  Fleet Supervisor
-  Jakarta, Indonesia
-  Apply
-
-  UX Analyst
-  London, United Kingdom
-  Apply
-
+          <img class="px-8 rounded-[50%]" src="./assets/images/join-us.jpg" alt="telemetery">
   
+          <img class="w-[734px] h-[100px] absolute bottom-[50px] right-[-100px] md:right-[-170px]" src="./assets/patterns/left-downward-arrow.svg" alt="arrow">
+  
+          <img class="hidden md:block md:absolute md:right-[-500px] md:top-0 md:-z-10" src="./assets/patterns/circle.svg" alt="circle">
+  
+        </div>
+  
+        <div id="text" class="mt-14 flex flex-col items-center gap-8 md:items-start">
+  
+          <h3 class="text-center text-slate-600 text-3xl font-bold font-['Space_Mono'] md:text-start md:text-5xl">Care to join our <br> mission?</h3>
+  
+          <p class="w-80 text-center text-gray-400 text-base font-normal font-['Lexend_Deca'] md:text-start md:w-111">We’re always looking for ambitious individuals to help us on our journey. If you’re passionate about our mission to provide clean, accessible transport to improve urban living we want to hear from you!</p>
+  
+          <button class="font-['Space_Mono'] text-white text-base font-bold bg-amber-400 px-10 py-3.5 border-[3px] border-amber-400 hover:bg-white hover:text-amber-400">Say Hello</button>
+  
+        </div>
+  
+      </div>
 
-  Sign up and Scoot off today
+    </section>
 
+    <section id="mid" class="mt-30 flex flex-col items-center">
 
+      <h2 class="text-slate-600 text-3xl font-bold font-['Space_Mono'] mb-12 md:text-5xl">Why join us?</h2>
 
-  About
-  Location
-  Careers
+      <div id="ourall" class="flex flex-col md:flex-row">
+
+        <div id="tech" class="px-12 relative flex flex-col items-center justify-center">
+
+          <img class="rounded-[50%]" src="./assets/images/our-tech.jpg" alt="tech">
+          
+          <div class="absolute bottom-[200px] rounded-[50%] bg-amber-400 w-24 h-24 flex items-center justify-center"> <h1 class="text-slate-600 text-2xl font-bold font-['Space_Mono'] ">01</h1> </div>
+  
+          <h2 class="mt-16 mb-12 text-slate-600 text-2xl font-bold font-['Space_Mono']">Our tech</h2>
+  
+          <p class="w-[321px] text-center text-gray-400 text-base font-normal font-['Lexend_Deca']">We’re using cutting edge technology to drive accessible urban transportation forward. Our fully electric scooters are a joy to ride!</p>
+  
+        </div>
+  
+        <div id="integrity" class="mt-15 px-12 relative flex flex-col items-center justify-center md:mt-0">
+  
+          <img class="rounded-[50%]" src="./assets/images/our-integrity.jpg" alt="tech">
+          
+          <div class="absolute bottom-[170px] rounded-[50%] bg-amber-400 w-24 h-24 flex items-center justify-center md:bottom-[190px]"> <h1 class="text-slate-600 text-2xl font-bold font-['Space_Mono'] ">02</h1> </div>
+  
+          <h2 class="mt-16 mb-12 text-slate-600 text-2xl font-bold font-['Space_Mono']">Our integrity</h2>
+  
+          <p class="w-[321px] text-center text-gray-400 text-base font-normal font-['Lexend_Deca']">We are fully committed to deliver a great yet safe, sustainable micro-mobility experience in every city we serve.</p>
+  
+        </div>
+  
+        <div id="community" class="mt-15 px-12 relative flex flex-col items-center justify-center md:mt-0">
+  
+          <img class="rounded-[50%]" src="./assets/images/our-community.jpg" alt="tech">
+          
+          <div class="absolute bottom-[170px] rounded-[50%] bg-amber-400 w-24 h-24 flex items-center justify-center md:bottom-[190px]"> <h1 class="text-slate-600 text-2xl font-bold font-['Space_Mono'] ">03</h1> </div>
+  
+          <h2 class="mt-16 mb-12 text-slate-600 text-2xl font-bold font-['Space_Mono']">Our community</h2>
+  
+          <p class="w-[331px] text-center text-gray-400 text-base font-normal font-['Lexend_Deca']">We support every community we serve. All workers are paid a living wage based on their location and are Scoot employees.</p>
+  
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="bot" class="mt-[145px] px-8 flex flex-col gap-4 md:px-[165px] md:gap-6">
+
+      <div class="bg-slate-100 p-8 flex flex-col items-center gap-4 md:flex-row md:justify-between md:pl-10 md:pr-16">
+
+        <div id="text" class="flex flex-col items-center gap-1 md:items-start">
+
+          <h1 class="text-slate-600 text-lg font-bold font-['Space_Mono'] md:text-2xl">General Manager</h1>
+          
+          <p class="text-slate-600 text-base font-normal font-['Lexend_Deca']">Jakarta, Indonesia</p>
+        
+        </div>
+
+        <button class="w-full font-['Space_Mono'] text-white text-base font-bold bg-amber-400 px-10 py-3.5 border-[3px] border-amber-400 md:w-[180px] hover:bg-white hover:text-amber-400">Apply</button>
+
+      </div>
+
+      <div class="bg-slate-100 p-8 flex flex-col items-center gap-4 md:flex-row md:justify-between md:pl-10 md:pr-16">
+
+        <div id="text" class="flex flex-col items-center gap-1 md:items-start">
+
+          <h1 class="text-slate-600 text-lg font-bold font-['Space_Mono'] md:text-2xl">UI/UX Designer</h1>
+          
+          <p class="text-slate-600 text-base font-normal font-['Lexend_Deca']">Yokohama, Japan</p>
+        
+        </div>
+
+        <button class="w-full font-['Space_Mono'] text-white text-base font-bold bg-amber-400 px-10 py-3.5 border-[3px] border-amber-400 md:w-[180px] hover:bg-white hover:text-amber-400">Apply</button>
+
+      </div>
+
+      <div class="bg-slate-100 py-8 px-7 flex flex-col items-center gap-4 md:flex-row md:justify-between md:pl-10 md:pr-16">
+
+        <div id="text" class="flex flex-col items-center gap-1 md:items-start">
+
+          <h1 class="text-slate-600 text-lg font-bold font-['Space_Mono'] md:text-2xl">Blog Content Copywriter</h1>
+          
+          <p class="text-slate-600 text-base font-normal font-['Lexend_Deca']">New York, United States</p>
+        
+        </div>
+
+        <button class="w-full font-['Space_Mono'] text-white text-base font-bold bg-amber-400 px-10 py-3.5 border-[3px] border-amber-400 md:w-[180px] hover:bg-white hover:text-amber-400">Apply</button>
+
+      </div>
+
+      <div class="bg-slate-100 p-8 flex flex-col items-center gap-4 md:flex-row md:justify-between md:pl-10 md:pr-16">
+
+        <div id="text" class="flex flex-col items-center gap-1 md:items-start">
+
+          <h1 class="text-slate-600 text-lg font-bold font-['Space_Mono'] md:text-2xl">Graphic Designer</h1>
+          
+          <p class="text-slate-600 text-base font-normal font-['Lexend_Deca']">New York, United States</p>
+        
+        </div>
+
+        <button class="w-full font-['Space_Mono'] text-white text-base font-bold bg-amber-400 px-10 py-3.5 border-[3px] border-amber-400 md:w-[180px] hover:bg-white hover:text-amber-400">Apply</button>
+
+      </div>
+
+      <div class="bg-slate-100 p-8 flex flex-col items-center gap-4 md:flex-row md:justify-between md:pl-10 md:pr-16">
+
+        <div id="text" class="flex flex-col items-center gap-1 md:items-start">
+
+          <h1 class="text-slate-600 text-lg font-bold font-['Space_Mono'] md:text-2xl">Fleet Supervisor</h1>
+          
+          <p class="text-slate-600 text-base font-normal font-['Lexend_Deca']">Jakarta, Indonesia</p>
+        
+        </div>
+
+        <button class="w-full font-['Space_Mono'] text-white text-base font-bold bg-amber-400 px-10 py-3.5 border-[3px] border-amber-400 md:w-[180px] hover:bg-white hover:text-amber-400">Apply</button>
+
+      </div>
+
+      <div class="bg-slate-100 p-8 flex flex-col items-center gap-4 md:flex-row md:justify-between md:pl-10 md:pr-16">
+
+        <div id="text" class="flex flex-col items-center gap-1 md:items-start">
+
+          <h1 class="text-slate-600 text-lg font-bold font-['Space_Mono'] md:text-2xl">UX Analyst</h1>
+          
+          <p class="text-slate-600 text-base font-normal font-['Lexend_Deca']">London, United Kingdom</p>
+        
+        </div>
+
+        <button class="w-full font-['Space_Mono'] text-white text-base font-bold bg-amber-400 px-10 py-3.5 border-[3px] border-amber-400 md:w-[180px] hover:bg-white hover:text-amber-400">Apply</button>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="mt-30">
+
+    <div class="bg-slate-600 relative flex flex-col items-center py-22 gap-10 md:flex-row md:justify-between md:px-[165px]">
+
+      <img class="absolute bottom-0 md:right-[-200px]" src="./assets/patterns/semi-circles.svg" alt="bg">
+
+      <h4 class="text-center text-white text-3xl font-bold font-['Space_Mono'] md:text-start md:text-5xl">Sign up and <br> Scoot off today</h4>
+
+      <div id="platform" class="flex gap-3 md:gap-4.5">
+
+        <img class="w-28.5 h-10 md:w-[159px] md:h-[56px]" src="./assets/icons/app-store.svg" alt="app store">
+
+        <img class="w-32.5 h-10 md:w-[182px] md:h-[56px]" src="./assets/icons/google-play.svg" alt="google play">
+
+      </div>
+
+    </div>
+
+    <div class="h-[438px] bg-zinc-700 flex flex-col items-center justify-center md:flex-row md:h-24 md:px-[165px] md:justify-between">
+
+      <img src="./assets/logo-white.svg" alt="logo">
+
+      <ul class="flex flex-col items-center gap-6 mt-10 mb-13.5 gap-4 md:flex-row md:mr-auto md:mt-0 md:mb-0 md:ml-15">
+        <li><a class="text-gray-400 text-base font-bold font-['Space_Mono'] hover:text-amber-400" href="about.html">About</a></li>
+        <li><a class="text-gray-400 text-base font-bold font-['Space_Mono'] hover:text-amber-400" href="locations.html">Location</a></li>
+        <li><a class="text-gray-400 text-base font-bold font-['Space_Mono'] hover:text-amber-400" href="index.html">Home</a></li>
+      </ul>
+
+      <div id="socials" class="flex gap-12 md:gap-6">
+
+        <img src="./assets/icons/facebook.svg" alt="fb">
+        <img src="./assets/icons/twitter.svg" alt="tw">
+        <img src="./assets/icons/instagram.svg" alt="ig">
+
+      </div>
+
+    </div>
+
+  </footer>
 
 </body>
 </html>

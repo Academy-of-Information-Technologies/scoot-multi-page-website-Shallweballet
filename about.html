@@ -7,98 +7,272 @@
   <link rel="stylesheet" href="./src/output.css">
   <title>Frontend Mentor | Scoot About</title>
 </head>
-<body>
+<body class="overflow-x-hidden">
 
-  About
-  Location
-  Careers
+  <header class="bg-white flex items-center justify-start px-8 md:justify-start md:py-5.5 md:px-42">
 
-  Get Scootin
+    <aside class="group relative h-16 flex items-center justify-center md:hidden">
+
+      <img class="mr-auto" src="./assets/icons/hamburger.svg" alt="burger">
+
+      <div class="hidden h-[603px] group-hover:flex flex-col absolute left-[-33px] top-16 w-64 pt-16 pl-8 z-10 bg-zinc-600 ">
+
+        <ul class="flex flex-col gap-6">
+          <li><a class="text-slate-200 text-md font-bold font-['Space_Mono'] hover:text-amber-400" href="index.html">Home</a></li>
+          <li><a class="text-slate-200 text-md font-bold font-['Space_Mono'] hover:text-amber-400" href="locations.html">Location</a></li>
+          <li><a class="text-slate-200 text-md font-bold font-['Space_Mono'] hover:text-amber-400" href="careers.html">Careers</a></li>
+        </ul>
+
+        <button class="mt-[339px] w-50 border-[3px] border-amber-400 font-['Space_Mono'] text-white text-base font-bold bg-amber-400 px-10 py-3.5 hover:text-amber-400 hover:border-[3px] hover:border-amber-400">Get Scootin</button>
+
+      </div>
+
+    </aside>  
+
+    <img class="mx-auto w-[75.5px] h-5 md:mx-0 md:w-[108px] md:h-7" src="./assets/logo.svg" alt="logo">
+
+    <ul class="flex flex-row gap-6 hidden md:flex md:ml-14.5">
+      <li><a class="text-gray-400 text-base font-bold font-['Space_Mono'] hover:text-amber-400" href="index.html">Home</a></li>
+      <li><a class="text-gray-400 text-base font-bold font-['Space_Mono'] hover:text-amber-400" href="locations.html">Location</a></li>
+      <li><a class="text-gray-400 text-base font-bold font-['Space_Mono'] hover:text-amber-400" href="careers.html">Careers</a></li>
+    </ul>
+
+    <button class="ml-auto w-50 border-[3px] border-amber-400 font-['Space_Mono'] text-white text-base font-bold bg-amber-400 px-10 py-3.5 hidden md:flex hover:text-amber-400 hover:border-[3px] hover:border-amber-400 hover:bg-white">Get Scootin</button>
+
+  </header>
+
+  <main>
+
+    <section id="top" class="relative h-40 bg-[url(/assets/images/about-hero-mobile.jpg)] bg-cover bg-no-repeat flex justify-center items-center md:bg-[url(/assets/images/about-hero-desktop.jpg)] md:bg-cover md:bg-no-repeat md:bg-center md:items-center md:justify-start md:pl-[165px]">
+
+      <h1 class="text-white text-4xl font-bold font-['Space_Mono']">About</h1>
+
+      <img class="hidden md:block md:absolute md:right-[-30px]" src="./assets/patterns/white-circles.svg" alt="circles">
+
+    </section>
+
+    <section id="mid" class="mt-18 md:px-[165px]">
+
+      <div id="first" class="md:flex md:flex-row-reverse md:justify-between">
+
+        <div id="photo" class="relative">
+
+          <img class="px-8 rounded-[50%]" src="./assets/images/digital-era.jpg" alt="telemetery">
+  
+          <img class="w-[734px] h-[100px] absolute bottom-[50px] right-[-100px] md:right-[-170px]" src="./assets/patterns/left-upward-arrow.svg" alt="arrow">
+
+          <img class="hidden md:block md:absolute md:right-[-500px] md:top-0 md:-z-10" src="./assets/patterns/circle.svg" alt="circle">
+  
+        </div>
+  
+        <div id="text" class="mt-14 flex flex-col items-center gap-8 md:items-start">
+  
+          <h3 class="text-center text-slate-600 text-3xl font-bold font-['Space_Mono'] md:text-start md:text-5xl">Mobility for the <br> digital era</h3>
+  
+          <p class="w-80 text-center text-gray-400 text-base font-normal font-['Lexend_Deca'] md:text-start md:w-111">Getting around should be simple (and even fun!) for everyone. We embrace technology to provide low cost, smart access to scooters at your fingertips.</p>
+  
+        </div>
+
+      </div>
+
+      <div id="second" class="mt-18 md:flex md:flex-row md:justify-between">
+
+        <div id="photo" class="relative">
+
+          <img class="px-8 rounded-[50%]" src="./assets/images/better-living.jpg" alt="near you">
+  
+          <img class="w-[734px] h-[100px] absolute bottom-[200px] left-[-150px] md:left-[-165px] md:bottom-[350px]" src="./assets/patterns/right-arrow.svg" alt="arrow">
+
+          <img class="hidden md:block md:absolute md:left-[-500px] md:top-0 md:-z-10" src="./assets/patterns/circle.svg" alt="circle">
+  
+        </div>
+  
+        <div id="text" class="mt-14 flex flex-col items-center gap-8 md:items-start">
+  
+          <h3 class="text-center text-slate-600 text-3xl font-bold font-['Space_Mono'] md:text-start md:text-5xl">Better urban <br> living</h3>
+  
+          <p class="w-83 text-center text-gray-400 text-base font-normal font-['Lexend_Deca'] md:text-start md:w-111">We’re helping connect cities and bring people closer together. Our scooters are also fully-electric and we offset the minimal carbon footprint for each ride.</p>
+  
+        </div>
+        
+      </div>
+
+    </section>
+
+    <section id="bot" class="mt-30 flex flex-col items-center px-[165px]">
+
+      <h2 class="text-slate-600 text-3xl font-bold font-['Space_Mono'] mb-12 md:text-5xl">Our values</h2>
+
+      <div id="ourall" class="flex flex-col md:flex-row">
+
+        <div id="tech" class="px-12 relative flex flex-col items-center justify-center">
+
+          <img class="rounded-[50%]" src="./assets/images/our-tech.jpg" alt="tech">
+          
+          <div class="absolute bottom-[200px] rounded-[50%] bg-amber-400 w-24 h-24 flex items-center justify-center"> <h1 class="text-slate-600 text-2xl font-bold font-['Space_Mono'] ">01</h1> </div>
+  
+          <h2 class="mt-16 mb-12 text-slate-600 text-2xl font-bold font-['Space_Mono']">Our tech</h2>
+  
+          <p class="w-[321px] text-center text-gray-400 text-base font-normal font-['Lexend_Deca']">We’re using cutting edge technology to drive accessible urban transportation forward. Our fully electric scooters are a joy to ride!</p>
+  
+        </div>
+  
+        <div id="integrity" class="mt-15 px-12 relative flex flex-col items-center justify-center md:mt-0">
+  
+          <img class="rounded-[50%]" src="./assets/images/our-integrity.jpg" alt="tech">
+          
+          <div class="absolute bottom-[170px] rounded-[50%] bg-amber-400 w-24 h-24 flex items-center justify-center md:bottom-[190px]"> <h1 class="text-slate-600 text-2xl font-bold font-['Space_Mono'] ">02</h1> </div>
+  
+          <h2 class="mt-16 mb-12 text-slate-600 text-2xl font-bold font-['Space_Mono']">Our integrity</h2>
+  
+          <p class="w-[321px] text-center text-gray-400 text-base font-normal font-['Lexend_Deca']">We are fully committed to deliver a great yet safe, sustainable micro-mobility experience in every city we serve.</p>
+  
+        </div>
+  
+        <div id="community" class="mt-15 px-12 relative flex flex-col items-center justify-center md:mt-0">
+  
+          <img class="rounded-[50%]" src="./assets/images/our-community.jpg" alt="tech">
+          
+          <div class="absolute bottom-[170px] rounded-[50%] bg-amber-400 w-24 h-24 flex items-center justify-center md:bottom-[190px]"> <h1 class="text-slate-600 text-2xl font-bold font-['Space_Mono'] ">03</h1> </div>
+  
+          <h2 class="mt-16 mb-12 text-slate-600 text-2xl font-bold font-['Space_Mono']">Our community</h2>
+  
+          <p class="w-[331px] text-center text-gray-400 text-base font-normal font-['Lexend_Deca']">We support every community we serve. All workers are paid a living wage based on their location and are Scoot employees.</p>
+  
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="FAQs" class="mt-[145px] flex flex-col items-center md:px-[165px]">
+
+      <h1 class="text-slate-600 text-3xl font-bold font-['Space_Mono'] md:text-5xl">FAQs</h1>
+
+      <div id="howitworks" class="flex flex-col items-center md:flex-row md:items-start">
+
+         <h2 class="mt-12 text-slate-600 text-2xl font-bold font-['Space_Mono'] md:text-4xl">How it works</h2>
+
+        <div id="questions" class="mt-13 flex flex-col gap-4 px-7 md:w-[730px]">
+
+          <div class="bg-slate-100 px-7 py-8">
+
+            <div id="top" class="flex justify-between mb-6 gap-4">
+
+              <h3 class="text-slate-600 text-lg font-bold font-['Space_Mono']">How do I download the app?</h3>
+            
+              <img src="./assets/icons/chevron-up.svg" alt="down">
+
+            </div>
+
+            <p class="text-slate-600 text-base font-normal font-['Lexend_Deca']">To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it would be to click the relevant link at the bottom of this page and you’ll be re-directed to the correct page.</p>
+        
+          </div>
+
+          <div class="bg-slate-100 px-7 py-8 flex justify-between gap-4">
+
+            <h3 class="text-slate-600 text-lg font-bold font-['Space_Mono']">Can I find a nearby Scoots?</h3>
+          
+            <img src="./assets/icons/chevron-down.svg" alt="down">
+
+          </div>
+
+          <div class="bg-slate-100 px-7 py-8 flex justify-between mb-6 gap-4">
+
+            <h3 class="text-slate-600 text-lg font-bold font-['Space_Mono']">Do I need a license to ride?</h3>
+          
+            <img src="./assets/icons/chevron-down.svg" alt="down">
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div id="safedriving" class="flex flex-col items-center mt-5 md:flex-row md:items-start">
+
+        <h3 class="text-slate-600 text-2xl font-bold font-['Space_Mono'] md:text-4xl">Safe driving</h3>
+
+      <div id="questions" class="mt-13 flex flex-col gap-4 px-7 md:w-[730px] md:mt-0">
+
+        <div class="bg-slate-100 px-7 py-8">
+
+          <div id="top" class="flex justify-between mb-6 gap-4">
+
+            <h3 class="text-slate-600 text-lg font-bold font-['Space_Mono']">Should I wear a helmet?</h3>
+            
+            <img src="./assets/icons/chevron-up.svg" alt="down">
+
+          </div>
+
+          <p class="text-slate-600 text-base font-normal font-['Lexend_Deca']">Yes, please do! All cities have different laws. But we strongly strongly strongly recommend always wearing a helmet regardless of the local laws. We like you and we want you to be as safe as possible while Scooting.</p>
+        
+        </div>
+
+        <div class="bg-slate-100 px-7 py-8 flex justify-between gap-4">
+
+          <h3 class="text-slate-600 text-lg font-bold font-['Space_Mono']">How about the rules & regulations?</h3>
+          
+          <img src="./assets/icons/chevron-down.svg" alt="down">
+
+        </div>
+
+        <div class="bg-slate-100 px-7 py-8 flex justify-between mb-30 gap-4">
+
+          <h3 class="text-slate-600 text-lg font-bold font-['Space_Mono']">What if I damage my Scoot?</h3>
+          
+          <img src="./assets/icons/chevron-down.svg" alt="down">
+
+        </div>
+
+      </div>
+
+      </div>
 
 
+    </section>
 
-  About
+  </main>
 
+  <footer>
 
+    <div class="bg-slate-600 relative flex flex-col items-center py-22 gap-10 md:flex-row md:justify-between md:px-[165px]">
 
-  Mobility for the digital era
+      <img class="absolute bottom-0 md:right-[-200px]" src="./assets/patterns/semi-circles.svg" alt="bg">
 
-  Getting around should be simple (and even fun!) for everyone. We embrace technology to 
-  provide low cost, smart access to scooters at your fingertips.
+      <h4 class="text-center text-white text-3xl font-bold font-['Space_Mono'] md:text-start md:text-5xl">Sign up and <br> Scoot off today</h4>
 
-  Better urban living
+      <div id="platform" class="flex gap-3 md:gap-4.5">
 
-  We’re helping connect cities and bring people closer together. Our scooters are also 
-  fully-electric and we offset the minimal carbon footprint for each ride.
+        <img class="w-28.5 h-10 md:w-[159px] md:h-[56px]" src="./assets/icons/app-store.svg" alt="app store">
 
+        <img class="w-32.5 h-10 md:w-[182px] md:h-[56px]" src="./assets/icons/google-play.svg" alt="google play">
 
+      </div>
 
-  Our values
+    </div>
 
-  01
-  Our tech
-  We’re using cutting edge technology to drive accessible urban transportation forward. 
-  Our fully electric scooters are a joy to ride!
+    <div class="h-[438px] bg-zinc-700 flex flex-col items-center justify-center md:flex-row md:h-24 md:px-[165px] md:justify-between">
 
-  02
-  Our integrity
-  We are fully committed to deliver a great yet safe, sustainable micro-mobility experience 
-  in every city we serve.
+      <img src="./assets/logo-white.svg" alt="logo">
 
-  03
-  Our community
-  We support every community we serve. All workers are paid a living wage based on their 
-  location and are Scoot employees.
+      <ul class="flex flex-col items-center gap-6 mt-10 mb-13.5 gap-4 md:flex-row md:mr-auto md:mt-0 md:mb-0 md:ml-15">
+        <li><a class="text-gray-400 text-base font-bold font-['Space_Mono'] hover:text-amber-400" href="index.html">Home</a></li>
+        <li><a class="text-gray-400 text-base font-bold font-['Space_Mono'] hover:text-amber-400" href="locations.html">Location</a></li>
+        <li><a class="text-gray-400 text-base font-bold font-['Space_Mono'] hover:text-amber-400" href="careers.html">Careers</a></li>
+      </ul>
 
+      <div id="socials" class="flex gap-12 md:gap-6">
 
+        <img src="./assets/icons/facebook.svg" alt="fb">
+        <img src="./assets/icons/twitter.svg" alt="tw">
+        <img src="./assets/icons/instagram.svg" alt="ig">
 
-  FAQs
+      </div>
 
-  How it works
+    </div>
 
-  How do I download the app?
-
-  To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. 
-  An even simpler way to do it would be to click the relevant link at the bottom of this 
-  page and you’ll be re-directed to the correct page.
-
-  Can I find a nearby Scoots?
-
-  Definitely! Simply open up the app and allow us to find your location while using it. We'll 
-  show you all of the closest Scoots and some extra useful information. 
-
-  Do I need a license to ride?
-
-  Yup! We provide information inside the app regarding local laws and the license you need to be 
-  able to ride our Scoots.
-
-  Safe driving
-
-  Should I wear a helmet?
-
-  Yes, please do! All cities have different laws. But we strongly strongly strongly recommend 
-  always wearing a helmet regardless of the local laws. We like you and we want you to be as 
-  safe as possible while Scooting.
-
-  How about the rules & regulations?
-
-  Now is not the time to be a rule breaker. Be sure you're complying with all local laws and 
-  regulations. Also, just be a good human being. Be sure not to park your Scoot where it can 
-  block access to buildings or get in people's way.
-
-  What if I damage my Scoot?
-
-  Be sure to read our terms and conditions carefully. Not the most fun job we know but we make 
-  it as clear as possible. There's an option to add insurance for each trip, or you can sign 
-  up for annual insurance if you're a regular Scooter.
-
-  Sign up and Scoot off today
-
-
-
-  About
-  Location
-  Careers
+  </footer>
 
 </body>
 </html>
